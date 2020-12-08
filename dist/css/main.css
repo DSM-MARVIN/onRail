@@ -1,0 +1,547 @@
+body {
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+.demo-contain {
+  height: 100vh;
+  background-color: #314580;
+}
+
+nav {
+  margin-top: -10px;
+  padding: 10px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .logo {
+  margin: 10px 0px 10px 5px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+nav .logo .on {
+  color: tomato;
+}
+
+.nav {
+  color: white;
+  position: absolute;
+  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav .nav-list {
+  word-spacing: -1.5px;
+  font-family: tahoma;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  margin-top: -15px;
+  width: inherit;
+  padding: 25px 5px;
+  list-style: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.nav .nav-list:hover {
+  color: steelblue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+main {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .concept {
+  width: 45%;
+  background-image: url(/concept1.png);
+  background-position: center;
+  background-size: cover;
+}
+
+main .concept-exp {
+  padding-bottom: 15px;
+}
+
+main .concept-exp .w1 {
+  text-align: center;
+  font-size: 35px;
+}
+
+main .concept-exp .w1 .onrail {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: tomato;
+}
+
+main .concept-exp .w2 {
+  letter-spacing: 0.05em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 25px;
+}
+
+main .concept-exp .w3 {
+  letter-spacing: 0.05em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: -20px;
+  font-size: 25px;
+}
+
+main .concept-exp .w4 {
+  font-family: cursive;
+  margin: -0.2px;
+}
+
+main .concept-exp .w5 {
+  font-family: tahoma;
+  padding-bottom: 10px;
+  -webkit-animation-name: onrail;
+          animation-name: onrail;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+main .concept-exp .learn {
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  background-color: tomato;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main .concept-exp .learn:hover {
+  background-color: steelblue;
+  border-radius: 15px;
+}
+
+@-webkit-keyframes onrail {
+  0% {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+  50% {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+  100% {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+}
+
+@keyframes onrail {
+  0% {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+  50% {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+  100% {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+}
+
+.terms {
+  background-color: white;
+  margin-top: 4.5%;
+  border: 1px white solid;
+  text-align: center;
+  padding: 0 30px 0 30px;
+}
+
+.terms-concepts {
+  padding: 10px;
+}
+
+.terms-concepts .fa {
+  font-size: 25px;
+  color: tomato;
+}
+
+.terms-concepts .term-head {
+  color: #314580;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.terms-concepts .term-body {
+  font-size: 13px;
+}
+
+.more-info {
+  color: white;
+  background-color: gray;
+  padding: 8px 0px 8px 0px;
+}
+
+.m-content {
+  background-color: #333;
+  height: 100vh;
+  font-size: 13px;
+}
+
+.m-content .m-head {
+  font-family: tahoma;
+  font-size: 15px;
+}
+
+.m-content p {
+  padding: 8px;
+  padding-top: 4px;
+  font-family: sans-serif;
+  font-size: 13px;
+  margin-top: -20px;
+}
+
+.m-content .pic-content {
+  margin-top: -7.8px;
+  width: 101.9%;
+  height: 65%;
+  margin-bottom: 20px;
+  background-color: gray;
+  background-image: url(/logi.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.r-content {
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.r-content .img {
+  width: 450px;
+  height: 300px;
+  background-image: url(/paper_plane_PNG83.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.circle {
+  padding: 8px;
+}
+
+.circle .one {
+  border-radius: 50%;
+  font-size: 30px;
+  padding: 8px;
+  background-color: orange;
+}
+
+.circle .two {
+  border-radius: 50%;
+  font-size: 30px;
+  padding: 8px;
+  background-color: green;
+}
+
+.circle .three {
+  border-radius: 50%;
+  font-size: 30px;
+  padding: 8px;
+  background-color: darkmagenta;
+}
+
+.circle .four {
+  border-radius: 50%;
+  font-size: 30px;
+  padding: 8px;
+  background-color: darkslategray;
+}
+
+.r-sum {
+  font-size: 16px;
+  padding-left: 15px;
+  display: inline;
+}
+
+.circon {
+  background-color: white;
+}
+
+.cir:nth-child(1) {
+  background-image: url(/pexels-pixabay-326410.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  margin: 3px;
+  width: 245px;
+  height: 245px;
+}
+
+.cir:nth-child(2) {
+  background-image: url(/pexels-fauxels-3184292.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  margin: 3px;
+  width: 245px;
+  height: 245px;
+}
+
+.cir:nth-child(3) {
+  background-image: url(/pexels-norma-mortenson-4391478.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  margin: 3px;
+  width: 245px;
+  height: 245px;
+}
+
+.cir:nth-child(4) {
+  background-image: url(/pexels-cottonbro-4604662.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  margin: 3px;
+  width: 245px;
+  height: 245px;
+}
+
+.formin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #9b59b6;
+}
+
+.formin .pic2 {
+  display: block;
+}
+
+/* start */
+.form-in {
+  overflow: hidden;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  max-width: 100%;
+}
+
+.header {
+  /* background-color: rgb(179, 176, 176); */
+  color: white;
+  background-color: royalblue;
+  /* border-bottom: 1px rgb(78, 77, 77) solid; */
+  padding: 5px 10px;
+}
+
+.haeder .h2 {
+  margin: 0;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 8px;
+  padding-bottom: 13px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px gray solid;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 8px;
+}
+
+.form-control.success input {
+  border-color: green;
+}
+
+.form-control.error input {
+  border-color: red;
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  /* bottom: 0;
+    left: 0; */
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: red;
+}
+
+.form button {
+  background-color: royalblue;
+  border: 2px royalblue solid;
+  color: white;
+  display: block;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* end */
+footer {
+  color: white;
+  background-color: #0d0d36;
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .l-body {
+  color: royalblue;
+}
+
+footer .loc {
+  color: royalblue;
+}
+
+footer .contacts {
+  color: royalblue;
+}
+
+footer .follow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .follow .fa {
+  padding: 5px;
+  border: 2px royalblue solid;
+  border-radius: 50%;
+  font-size: 20px;
+  margin: 5px;
+  -webkit-transition: 0.5s background-color;
+  transition: 0.5s background-color;
+}
+
+footer .follow .fa:hover {
+  background-color: royalblue;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+  }
+  nav .logo {
+    font-size: 15px;
+    margin: 5px 0px 10px 5px;
+  }
+  .nav .nav-list {
+    margin-top: -15px;
+    font-size: 12px;
+  }
+  main {
+    padding-left: 5px;
+  }
+  main .concept {
+    display: none;
+  }
+  .cir:nth-child(1) {
+    background-color: black;
+    margin: 3px;
+    width: 350px;
+    height: 350px;
+  }
+  .cir:nth-child(2) {
+    background-color: black;
+    margin: 3px;
+    width: 350px;
+    height: 350px;
+  }
+  .cir:nth-child(3) {
+    background-color: black;
+    margin: 3px;
+    width: 350px;
+    height: 350px;
+  }
+  .cir:nth-child(4) {
+    background-color: black;
+    margin: 3px;
+    width: 350px;
+    height: 350px;
+  }
+  .r-content .img {
+    display: none;
+  }
+  .circon {
+    background-color: gray;
+  }
+  .formin {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .formin .pic2 {
+    display: none;
+  }
+  .formin .form-in {
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */

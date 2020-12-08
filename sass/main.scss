@@ -1,0 +1,452 @@
+$primary-color : white;
+$secondary-color : tomato;
+$hover : steelblue;
+
+
+body{
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: $primary-color;
+}
+
+.demo-contain{
+    height: 100vh;
+    background-color: rgb(49, 69, 128);
+}
+
+
+nav{
+    margin-top: -10px;
+    padding: 10px 0;
+    position: relative;
+    display: flex;
+    // border: 1px red solid;
+
+    .logo{
+        margin: 10px 0px 10px 5px;
+        font-weight: bold;
+        font-size: 20px;
+        color: $primary-color;
+
+        .on{
+            color: $secondary-color;
+        }
+    }
+}
+
+.nav{
+    color: $primary-color;
+    position: absolute;
+    right: 10px;
+    display: flex;
+
+    .nav-list{
+        word-spacing: -1.5px;
+        font-family: tahoma;
+        letter-spacing: 0.05em;
+        font-size: 14px;
+        // font-weight: 600;
+        margin-top: -15px;
+        width: inherit;
+        padding: 25px 5px;
+        // text-transform: uppercase;
+        list-style: none;
+        transition: all 1s;
+    }
+
+    .nav-list:hover{
+        color: $hover;
+        text-decoration: underline;
+        cursor: pointer;
+        // background-color: $primary-color;
+    }
+}
+
+main{
+    color: $primary-color;
+    display: flex;
+    justify-content: space-evenly;
+
+    .concept{
+        width: 45%;
+        // height: 50%;
+        background-image: url(/concept1.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .concept-exp{
+        padding-bottom: 15px;
+        .w1{
+            text-align: center;
+            font-size: 35px;
+
+            .onrail{
+                padding: 5px;
+                border-radius: 10px;
+                background-color: $secondary-color;
+
+            }
+            
+        }
+
+        .w2{
+            letter-spacing: 0.05em;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+        }
+        .w3{
+            letter-spacing: 0.05em;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-top: -20px;
+            font-size: 25px;
+        }
+
+        .w4{
+            font-family: cursive;
+            margin: -0.2px;
+        }
+        .w5{
+            font-family: tahoma;
+            padding-bottom: 10px;
+            animation-name: onrail;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+        }
+
+        .learn{
+            color: $primary-color;
+            padding: 8px;
+            text-decoration: none;
+            background-color: $secondary-color;
+            transition: all 0.5s;
+        }
+
+        .learn:hover{
+            background-color: $hover;
+            border-radius: 15px;
+        }
+    }
+}
+
+@keyframes onrail{
+    0%{
+       transform: translateX(-15px);
+    }
+    50%{
+       transform: translateX(15px);
+    }
+    100%{
+       transform: translateX(-15px)
+    }
+}
+
+.terms{
+    background-color: white;
+    margin-top: 4.5% ;
+    border: 1px white solid;
+    // display: flex;
+    text-align: center;   
+    padding: 0 30px 0 30px;
+    // justify-content: space-around;
+}
+
+.terms-concepts{
+    padding: 10px;
+    // display: flex;
+    // flex-direction: column;
+
+    .fa{
+        font-size: 25px;
+        color: tomato;
+    }
+
+    .term-head{
+        color: rgb(49, 69, 128);
+        font-weight: bold;
+        font-size: 14px;
+        // display: block;
+    }
+
+    .term-body{
+        font-size: 13px;
+    }
+}
+
+.more-info{
+    // display: flex;
+    // justify-content: center;
+    color: white;
+    background-color: gray;
+    padding: 8px 0px 8px 0px;
+}
+
+.m-content{
+    // border: 1px white solid;
+    background-color: #333;
+    height: 100vh;
+    // padding: 30px;
+    font-size: 13px;
+
+    .m-head{
+        font-family: tahoma;
+        font-size: 15px;
+    }
+
+    p{
+        padding: 8px;
+        padding-top: 4px;
+        font-family: sans-serif;
+        font-size: 13px;
+        margin-top: -20px;
+    }
+
+    .pic-content{
+        margin-top: -7.8px;
+        width: 101.9%;
+        height: 65%;
+        margin-bottom: 20px;
+        background-color: gray;
+        background-image: url(/logi.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.r-content{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    // border: 1px black solid;
+    .img{
+        width: 450px;
+        height: 300px;
+        background-image: url(/paper_plane_PNG83.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    }
+
+    .circle{
+        // display: inline;
+        padding: 8px;
+        // background-color: pink;
+
+        .one{
+            border-radius: 50%;
+            font-size: 30px;
+            padding: 8px;
+            background-color: orange;
+        }
+        .two{
+            border-radius: 50%;
+            font-size: 30px;
+            padding: 8px;
+            background-color: green;
+        }
+        .three{
+            border-radius: 50%;
+            font-size: 30px;
+            padding: 8px;
+            background-color: darkmagenta;
+        }
+        .four{
+            border-radius: 50%;
+            font-size: 30px;
+            padding: 8px;
+            background-color: darkslategray;
+        }
+    }
+
+    .r-sum{
+        font-size: 16px;
+        padding-left: 15px;
+        // font-weight: bold;
+        display: inline;
+    }
+
+    .circon{
+        background-color: white;
+        // margin: 1% 0;
+    }
+
+    .cir:nth-child(1){
+        // border-radius: 50%;
+        background-image: url(/pexels-pixabay-326410.jpg);
+        background-position: center;
+        background-size: cover;
+        background-color: black;
+        margin: 3px;
+        width: 245px;
+        height: 245px;
+    }
+    .cir:nth-child(2){
+        // border-radius: 50%;
+        background-image: url(/pexels-fauxels-3184292.jpg);
+        background-position: center;
+        background-size: cover;
+        background-color: black;
+        margin: 3px;
+        width: 245px;
+        height: 245px;
+    }
+    .cir:nth-child(3){
+        // border-radius: 50%;
+        background-image: url(/pexels-norma-mortenson-4391478.jpg);
+        background-position: center;
+        background-size: cover;
+        background-color: black;
+        margin: 3px;
+        width: 245px;
+        height: 245px;
+    }
+    .cir:nth-child(4){
+        // border-radius: 50%;
+        background-image: url(/pexels-cottonbro-4604662.jpg);
+        background-position: center;
+        background-size: cover;
+        background-color: black;
+        margin: 3px;
+        width: 245px;
+        height: 245px;
+    }
+
+    .formin{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #9b59b6;
+
+        .pic2{
+            display: block;
+        }
+    }
+
+/* start */
+.form-in{
+    overflow: hidden;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    max-width: 100%;
+}
+
+.header{
+    /* background-color: rgb(179, 176, 176); */
+    color: white;
+    background-color: royalblue;
+    /* border-bottom: 1px rgb(78, 77, 77) solid; */
+    padding: 5px 10px;
+}
+
+.haeder .h2{
+    margin: 0;
+}
+
+.form{
+    padding: 30px 40px;
+}
+
+.form-control{
+    margin-bottom: 8px;
+    padding-bottom: 13px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    border: 2px gray solid;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.form-control.success input{
+    border-color: green;
+}
+.form-control.error input{
+    border-color: red;
+}
+
+.form-control i{
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px
+}
+
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    /* bottom: 0;
+    left: 0; */
+}
+.form-control.error small{
+    visibility: visible;
+    color: red;
+}
+
+.form button{
+    background-color: royalblue;
+    border: 2px royalblue solid;
+    color: white;
+    display: block;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* end */
+
+    footer{
+        color: white;
+        background-color: rgb(13, 13, 54);
+        padding: 8px;
+        display: flex;
+        justify-content: space-evenly;
+
+        .l-body{
+            color: royalblue;
+        }
+
+        .loc{
+            color: royalblue;
+        }
+
+        .contacts{
+            color: royalblue;
+        }
+
+        .follow{
+            display: flex;
+            flex-direction: column;
+
+            .fa{
+                padding: 5px;
+                border: 2px royalblue solid;
+                border-radius: 50%;
+                font-size: 20px;
+                margin: 5px;
+                transition: 0.5s background-color;
+            }
+
+            .fa:hover{
+                background-color: royalblue;
+            }
+        }
+    }
+
+    @import './mobile'
