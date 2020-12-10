@@ -294,6 +294,7 @@ main .concept-exp .learn:hover {
   background-image: url("../images/pexels-pixabay-326410.jpg");
   background-position: center;
   background-size: cover;
+  background-color: black;
   margin: 3px;
   width: 245px;
   height: 245px;
@@ -482,6 +483,7 @@ footer .follow .fa:hover {
 
 @media (max-width: 700px) {
   body {
+    overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
   }
