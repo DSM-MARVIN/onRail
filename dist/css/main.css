@@ -69,7 +69,7 @@ main {
 
 main .concept {
   width: 45%;
-  background-image: url(/concept1.png);
+  background-image: url("../images/concept1.png");
   background-position: center;
   background-size: cover;
 }
@@ -224,7 +224,7 @@ main .concept-exp .learn:hover {
   height: 65%;
   margin-bottom: 20px;
   background-color: gray;
-  background-image: url(/logi.jpg);
+  background-image: url("../images/logi.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -243,7 +243,7 @@ main .concept-exp .learn:hover {
 .r-content .img {
   width: 450px;
   height: 300px;
-  background-image: url(/paper_plane_PNG83.png);
+  background-image: url("../images/paper_plane_PNG83.png");
   background-position: center;
   background-size: cover;
 }
@@ -291,17 +291,16 @@ main .concept-exp .learn:hover {
 }
 
 .cir:nth-child(1) {
-  background-image: url(/pexels-pixabay-326410.jpg);
+  background-image: url("../images/pexels-pixabay-326410.jpg");
   background-position: center;
   background-size: cover;
-  background-color: black;
   margin: 3px;
   width: 245px;
   height: 245px;
 }
 
 .cir:nth-child(2) {
-  background-image: url(/pexels-fauxels-3184292.jpg);
+  background-image: url("../images/pexels-fauxels-3184292.jpg");
   background-position: center;
   background-size: cover;
   background-color: black;
@@ -311,7 +310,7 @@ main .concept-exp .learn:hover {
 }
 
 .cir:nth-child(3) {
-  background-image: url(/pexels-norma-mortenson-4391478.jpg);
+  background-image: url("../images/pexels-norma-mortenson-4391478.jpg");
   background-position: center;
   background-size: cover;
   background-color: black;
@@ -321,7 +320,7 @@ main .concept-exp .learn:hover {
 }
 
 .cir:nth-child(4) {
-  background-image: url(/pexels-cottonbro-4604662.jpg);
+  background-image: url("../images/pexels-cottonbro-4604662.jpg");
   background-position: center;
   background-size: cover;
   background-color: black;

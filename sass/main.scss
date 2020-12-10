@@ -3,6 +3,7 @@ $secondary-color : tomato;
 $hover : steelblue;
 
 
+
 body{
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
@@ -70,7 +71,7 @@ main{
     .concept{
         width: 45%;
         // height: 50%;
-        background-image: url(/concept1.png);
+        background-image: url("../images/concept1.png");
         background-position: center;
         background-size: cover;
     }
@@ -209,7 +210,7 @@ main{
         height: 65%;
         margin-bottom: 20px;
         background-color: gray;
-        background-image: url(/logi.jpg);
+        background-image: url("../images/logi.jpg");
         background-position: center;
         background-size: cover;
     }
@@ -223,7 +224,7 @@ main{
     .img{
         width: 450px;
         height: 300px;
-        background-image: url(/paper_plane_PNG83.png);
+        background-image: url("../images/paper_plane_PNG83.png");
         background-position: center;
         background-size: cover;
     }
@@ -275,17 +276,18 @@ main{
 
     .cir:nth-child(1){
         // border-radius: 50%;
-        background-image: url(/pexels-pixabay-326410.jpg);
+        // background-image: url("./../images/pexels-pixabay-326410.jpg") no-repeat center center fixed;
+        background-image: url("../images/pexels-pixabay-326410.jpg");
         background-position: center;
         background-size: cover;
-        background-color: black;
+        // background-color:black;
         margin: 3px;
         width: 245px;
         height: 245px;
     }
     .cir:nth-child(2){
         // border-radius: 50%;
-        background-image: url(/pexels-fauxels-3184292.jpg);
+        background-image: url("../images/pexels-fauxels-3184292.jpg");
         background-position: center;
         background-size: cover;
         background-color: black;
@@ -295,7 +297,7 @@ main{
     }
     .cir:nth-child(3){
         // border-radius: 50%;
-        background-image: url(/pexels-norma-mortenson-4391478.jpg);
+        background-image: url("../images/pexels-norma-mortenson-4391478.jpg");
         background-position: center;
         background-size: cover;
         background-color: black;
@@ -305,7 +307,7 @@ main{
     }
     .cir:nth-child(4){
         // border-radius: 50%;
-        background-image: url(/pexels-cottonbro-4604662.jpg);
+        background-image: url("../images/pexels-cottonbro-4604662.jpg");
         background-position: center;
         background-size: cover;
         background-color: black;
@@ -449,4 +451,4 @@ main{
         }
     }
 
-    @import './mobile'
+    @import './mobile';
